@@ -39,15 +39,16 @@
         <li>A bag of sugar</li>
         <li>A stick of butter</li>
     </ol>
-    <p id="clicker" onlick="click()">you clicked me 0 times</p>
+    <p id="clicker" onclick="clickText()">you clicked me 0 times</p>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_November_2010-1a.jpg/960px-Cat_November_2010-1a.jpg">
 
     <script>
        let click = 0;
-       function click() {
+       function clickText() {
             const text = document.getElementById("clicker");
             click++;
             text.innerHTML = "you clicked me " + click + "times"
+            console.log("clicked")
         }   
     </script>
 </body>
